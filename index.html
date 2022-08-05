@@ -7,19 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet">
     <title>Advice Generator</title>
 </head>
 
 <body>
     <section class="card-body">
-        <div>
+        <div class="advice-card">
             <div class="title">
-                <p class="title-advice">advice</p>
+
                 <p class="advice-number" id="advice-number"></p>
             </div>
-            <p class="advice-quote" id="advice-quote"></p>
-            <div class="divider"></div>
-            <button class="advice-button"></button>
+            <div class="advice-box">
+                <p class="advice-quote" id="advice-quote"></p>
+            </div>
+            <div class="divider">
+                <img src="/assets/images/pattern-divider-desktop.svg" alt="" class="divider">
+            </div>
+            <div class="button-box">
+                <button class="advice-button" onclick="generateAdvice()">
+                    <img src="/assets/images/icon-dice.svg" alt="">
+                </button>
+            </div>
         </div>
     </section>
 </body>
